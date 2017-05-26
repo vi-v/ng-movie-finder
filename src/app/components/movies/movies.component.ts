@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MovieService } from '../../services/movie.service'
 
 @Component({
   selector: 'movies',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class MoviesComponent  {
     
+  constructor( private _movieService: MovieService ) {
+    
+  }
+
 }
